@@ -91,6 +91,11 @@ export BROWSER="brave"
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+# PowerLevel10k
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+source "$HOME/.config/powerlevel10k/powerlevel10k.zsh-theme"
+
 # remap caps to escape
 # setxkbmap -option caps:escape
 # swap escape and caps
