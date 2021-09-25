@@ -45,6 +45,9 @@ call plug#begin('~/.config/plugged')
     " Which key
     Plug 'liuchengxu/vim-which-key'
 
+    " Syntax Highlight python
+    Plug 'numirias/semshi' , {'do': ':UpdateRemotePlugins'}
+
     " Syntax Highlight for tsx
     Plug 'HerringtonDarkholme/yats.vim'
 
@@ -52,7 +55,6 @@ call plug#begin('~/.config/plugged')
     "Plug 'othree/yajs.vim'
     Plug 'yuezk/vim-js'
     Plug 'maxmellon/vim-jsx-pretty'
-
 
     " Html Syntax"
     Plug 'othree/html5.vim'
