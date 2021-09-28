@@ -31,8 +31,8 @@ call plug#begin('~/.config/plugged')
     Plug 'scrooloose/nerdcommenter'
 
     " Themes
-    Plug 'joshdick/onedark.vim'
-    Plug 'adrian5/oceanic-next-vim'
+	  "Plug 'tanvirtin/monokai.nvim'
+    Plug 'christianchiarulli/nvcode-color-schemes.vim'
     Plug 'crusoexia/vim-monokai'
 
     " Status Line
@@ -45,19 +45,22 @@ call plug#begin('~/.config/plugged')
     " Which key
     Plug 'liuchengxu/vim-which-key'
 
+    "Treesitter
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
+
     " Syntax Highlight python
-    Plug 'numirias/semshi' , {'do': ':UpdateRemotePlugins'}
+    "Plug 'numirias/semshi' , {'do': ':UpdateRemotePlugins'}
 
     " Syntax Highlight for tsx
-    Plug 'HerringtonDarkholme/yats.vim'
+    "Plug 'HerringtonDarkholme/yats.vim'
 
     " Syntax Highlight for jsx"
     "Plug 'othree/yajs.vim'
-    Plug 'yuezk/vim-js'
-    Plug 'maxmellon/vim-jsx-pretty'
+    "Plug 'yuezk/vim-js'
+    "Plug 'maxmellon/vim-jsx-pretty'
 
     " Html Syntax"
-    Plug 'othree/html5.vim'
+    "Plug 'othree/html5.vim'
 
 
 call plug#end()

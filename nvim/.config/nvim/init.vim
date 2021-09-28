@@ -7,8 +7,10 @@ source $HOME/.config/nvim/settings/key-maps.vim
 source $HOME/.config/nvim/settings/vim-pluggins.vim
 source $HOME/.config/nvim/settings/which-key.vim 
 source $HOME/.config/nvim/settings/coc-default-settings.vim
+source $HOME/.config/nvim/settings/treesitter.vim
 "source $HOME/.config/nvim/settings/themes/onedark.vim
-source $HOME/.config/nvim/settings/themes/monokai.vim
+"source $HOME/.config/nvim/settings/themes/monokai.vim
+source $HOME/.config/nvim/settings/themes/nvcode.vim
 "source $HOME/.config/nvim/settings/themes/oceanic-next.vim
 source $HOME/.config/nvim/settings/themes/airline.vim
 
