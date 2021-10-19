@@ -62,7 +62,7 @@ nnoremap <space>wl <C-w>l
 nnoremap <space>wv :vsplit<cr>
 nnoremap <space>wx :split<cr>
 " Easier buffer delete
-nnoremap <space>bd :silent bd<cr>
+nnoremap <space>bd :vsplit<cr> <C-w>h :bnext<cr> <C-w>l :bd<cr>
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
