@@ -69,4 +69,4 @@ nnoremap <Leader>O O<Esc>^Da
 
 
 " Normal mode for terminal
-tnoremap jj <c-w>N
+tnoremap jj <c-\><c-n>

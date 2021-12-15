@@ -6,5 +6,11 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "python.analysis.diagnosticMode": "openFilesOnly"
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "coc.preferences.rootPatterns":[
+    ".git",
+    ".hg",
+    ".projections.json",
+    "app"
+  ]
 }
