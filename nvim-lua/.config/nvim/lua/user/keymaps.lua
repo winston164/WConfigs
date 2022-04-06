@@ -29,8 +29,8 @@ keymap("n", "<leader>wl", "<C-w>l", opts)
 keymap("n", "<leader>wv", ":vsplit<cr>", opts)
 keymap("n", "<leader>wx", ":split<cr>", opts)
 
--- Clean Search 
-keymap("n", "<C-c>", ":nohl<CR>", opts) 
+-- Clean Search
+keymap("n", "<C-c>", ":nohl<CR>", opts)
 
 -- Explorer
 keymap("n", "<leader>ft", ":NvimTreeToggle<cr>", opts)
@@ -45,6 +45,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 
+-- Comment
+keymap("n", "<C-_>", '<CMD>lua require("Comment.api").toggle_current_linewise()<CR>', opts)
+
 -- Insert --
 -- Press jj fast to enter
 keymap("i", "jj", "<ESC>", opts)
@@ -53,6 +56,9 @@ keymap("i", "jj", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+-- Comment
+keymap("v", "<C-_>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
 
 -- Move text up and down
 -- keymap("v", "<A-j>", ":m .+1<CR>==", opts)
