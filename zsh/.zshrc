@@ -104,8 +104,3 @@ export PATH="$PATH:$(yarn global bin)"
 # swap escape and caps
 # setxkbmap -option caps:swapescape
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/winston.bendana/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/winston.bendana/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/winston.bendana/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/winston.bendana/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
