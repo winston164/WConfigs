@@ -46,7 +46,7 @@ keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 
 -- Comment
-keymap("n", "<C-_>", '<CMD>lua require("Comment.api").toggle_current_linewise()<CR>', opts)
+keymap("n", "<C-_>", 'gcc', { noremap = false, silent = true })
 
 -- Insert --
 -- Press jj fast to enter
@@ -58,7 +58,7 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Comment
-keymap("v", "<C-_>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
+keymap("v", "<C-_>", 'gc',{ noremap = false, silent = true })
 
 -- Move text up and down
 -- keymap("v", "<A-j>", ":m .+1<CR>==", opts)
