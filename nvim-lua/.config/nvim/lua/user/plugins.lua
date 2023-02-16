@@ -41,34 +41,34 @@ end
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
+   use "wbthomason/packer.nvim" -- Have packer manage itself
+   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+   use "numToStr/Comment.nvim" -- Easily comment stuff
+   use "akinsho/bufferline.nvim"
+   use "moll/vim-bbye"
 
-  -- Colorschemes
-  use "lunarvim/colorschemes" -- Many color schemes
-  use "crusoexia/vim-monokai" -- Monokai
-  use "christianchiarulli/nvcode-color-schemes.vim" -- More colorschemes
+   -- Colorschemes
+   use "Mofiqul/vscode.nvim"
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp" -- lsp completions
-  use "hrsh7th/cmp-nvim-lua" -- config completion
+   -- cmp plugins
+   use "hrsh7th/nvim-cmp" -- The completion plugin
+   use "hrsh7th/cmp-buffer" -- buffer completions
+   use "hrsh7th/cmp-path" -- path completions
+   use "hrsh7th/cmp-cmdline" -- cmdline completions
+   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+   use "hrsh7th/cmp-nvim-lsp" -- lsp completions
+   use "hrsh7th/cmp-nvim-lua" -- config completion
 
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-
-
+-- 
+--   -- LSP
+   use "neovim/nvim-lspconfig" -- enable LSP
+   use "williamboman/mason.nvim" -- lsp, dap, linter, and formatter installer
+   use "williamboman/mason-lspconfig.nvim"
+--   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+-- 
+-- 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
@@ -80,11 +80,11 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
-  -- snippets
+   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-    -- Git
+  -- Git
   use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim

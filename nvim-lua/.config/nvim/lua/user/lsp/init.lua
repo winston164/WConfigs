@@ -3,6 +3,12 @@ if not status_ok then
 	return
 end
 
-require("user.lsp.lsp-installer")
+local status_ok, mason = pcall(require, "mason")
+if not status_ok then
+	return
+end
+
+mason.setup()
+require("user.lsp.mason-lspconfig")
 require("user.lsp.handlers").setup()
-require("user.lsp.null-ls")
+-- require("user.lsp.null-ls")

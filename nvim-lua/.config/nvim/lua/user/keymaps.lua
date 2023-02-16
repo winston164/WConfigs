@@ -45,6 +45,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 
+-- Delete buffers (vim-bbye)
+keymap("n", "<leader>q", ":Bdelete<CR>", opts)
+
 -- Comment
 keymap("n", "<C-_>", 'gcc', { noremap = false, silent = true })
 
